@@ -177,6 +177,31 @@
   const allList = document.getElementById('all-list');
   const tiles = document.getElementById('tiles');
 
+  const carousel = document.getElementById('carousel');
+  const track = document.getElementById('carousel-track');
+
+  // Track content is duplicated so the -50% translate loops seamlessly.
+  const buildCarousel = () => {
+    const chips = jargons
+      .map(
+        (j) => `
+        <button type="button" tabindex="-1" data-abbr="${escapeHtml(j.abbr)}" title="${escapeHtml(j.full)}"
+                class="shrink-0 cursor-pointer whitespace-nowrap rounded-full bg-white/80 px-4 py-1.5 text-sm shadow-sm ring-1 ring-sky-100 transition hover:bg-sky-50 hover:ring-sky-300">
+          <span class="font-bold text-sky-600">${escapeHtml(j.abbr)}</span>
+          <span class="text-slate-500">${escapeHtml(j.full)}</span>
+        </button>`
+      )
+      .join('');
+    track.innerHTML = chips + chips;
+    track.style.animationDuration = `${Math.max(30, jargons.length * 3)}s`;
+    carousel.hidden = !allList.hidden;
+  };
+
+  track.addEventListener('click', (e) => {
+    const chip = e.target.closest('[data-abbr]');
+    if (chip) select(jargons.find((j) => j.abbr === chip.dataset.abbr));
+  });
+
   const toggleAll = (show) => {
     if (show && !tiles.children.length) {
       tiles.innerHTML = [...jargons]
@@ -192,6 +217,7 @@
         .join('');
     }
     allList.hidden = !show;
+    carousel.hidden = show || !jargons.length;
     countBtn.setAttribute('aria-expanded', String(show));
   };
 
@@ -226,6 +252,7 @@
     .then((data) => {
       jargons = data;
       document.getElementById('count').textContent = `${data.length} jargons`;
+      buildCarousel();
       document.body.dataset.ready = 'true';
       if (input.value) render(input.value);
     })
