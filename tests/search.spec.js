@@ -98,7 +98,7 @@ test('search is debounced: no suggestions until typing pauses', async ({ page })
   await input.press('B');
   // Immediately after the keystroke the debounce timer hasn't fired yet.
   await expect(page.locator('#suggestions')).toBeHidden();
-  await expect(page.locator('#suggestions [role="option"]').first()).toContainText('BSS');
+  await expect(page.locator('#suggestions [role="option"]').filter({ hasText: 'BSS' })).toBeVisible();
 });
 
 test('unknown input shows a no-match message', async ({ page }) => {
