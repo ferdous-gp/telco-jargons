@@ -172,6 +172,41 @@
     select(matches[Number(li.dataset.index)]);
   });
 
+  // Clicking the count toggles a tiled view of every jargon.
+  const countBtn = document.getElementById('count');
+  const allList = document.getElementById('all-list');
+  const tiles = document.getElementById('tiles');
+
+  const toggleAll = (show) => {
+    if (show && !tiles.children.length) {
+      tiles.innerHTML = [...jargons]
+        .sort((a, b) => a.abbr.localeCompare(b.abbr))
+        .map(
+          (j, i) => `
+          <button type="button" data-abbr="${escapeHtml(j.abbr)}"
+                  class="cursor-pointer rounded-2xl bg-white/80 p-4 text-left shadow-sm ring-1 ring-sky-100 transition hover:bg-sky-50 hover:ring-sky-300">
+            <span class="block text-lg font-bold text-sky-600">${escapeHtml(j.abbr)}</span>
+            <span class="mt-1 block text-sm text-slate-600">${escapeHtml(j.full)}</span>
+          </button>`
+        )
+        .join('');
+    }
+    allList.hidden = !show;
+    countBtn.setAttribute('aria-expanded', String(show));
+  };
+
+  countBtn.addEventListener('click', () => {
+    if (jargons.length) toggleAll(allList.hidden);
+  });
+
+  tiles.addEventListener('click', (e) => {
+    const tile = e.target.closest('[data-abbr]');
+    if (!tile) return;
+    select(jargons.find((j) => j.abbr === tile.dataset.abbr));
+    toggleAll(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
   input.addEventListener('blur', close);
   input.addEventListener('focus', () => {
     if (input.value && result.hidden) render(input.value);

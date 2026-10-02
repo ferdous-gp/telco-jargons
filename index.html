@@ -90,7 +90,8 @@
     </div>
 
     <p id="hint" class="mt-4 text-center text-sm text-slate-400">
-      <span id="count">&nbsp;</span>
+      <button id="count" type="button" aria-expanded="false" aria-controls="all-list" title="Show all jargons"
+              class="cursor-pointer rounded px-1 underline decoration-dotted underline-offset-4 hover:text-sky-600">&nbsp;</button>
       <span class="hidden sm:inline">
         &middot; <kbd class="rounded border border-slate-200 bg-white px-1.5 py-0.5 font-sans text-xs text-slate-500">&uarr;</kbd> <kbd class="rounded border border-slate-200 bg-white px-1.5 py-0.5 font-sans text-xs text-slate-500">&darr;</kbd> to navigate
         &middot; <kbd class="rounded border border-slate-200 bg-white px-1.5 py-0.5 font-sans text-xs text-slate-500">Enter</kbd> to select
@@ -110,6 +111,10 @@
       <p id="result-abbr" class="text-6xl font-bold tracking-tight text-sky-600"></p>
       <p id="result-full" class="mt-4 text-3xl text-slate-800"></p>
       <p id="result-desc" class="mx-auto mt-5 max-w-lg text-lg leading-relaxed text-slate-500"></p>
+    </section>
+
+    <section id="all-list" hidden aria-label="All jargons" class="mt-8 animate-fade-up">
+      <div id="tiles" class="grid grid-cols-2 gap-3 sm:grid-cols-3"></div>
     </section>
   </main>
 
