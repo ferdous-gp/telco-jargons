@@ -186,7 +186,7 @@
     }
   });
 
-  fetch('jargon.json')
+  fetch(`jargon.json?t=${Date.now()}`)
     .then((r) => r.json())
     .then((data) => {
       jargons = data;
