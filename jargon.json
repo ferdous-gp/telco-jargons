@@ -56,5 +56,9 @@
   {"abbr": "Churn", "full": "Subscriber Churn", "description": "Number of subscribers who stop using an operator's service in a period."},
   {"abbr": "SubMS", "full": "Subscriber Market Share", "description": "An operator's subscribers as a share of total market subscribers."},
   {"abbr": "Sub Base", "full": "Subscriber Base", "description": "Total number of active subscribers of an operator in a given period."},
-  {"abbr": "AMPU", "full": "Average Minutes Per User", "description": "Average voice minutes used per subscriber over a period."}
+  {"abbr": "AMPU", "full": "Average Minutes Per User", "description": "Average voice minutes used per subscriber over a period."},
+  {"abbr": "CTA", "full": "Call To Action", "description": "This is just a button to move to some action or next step."},
+  {"abbr": "IN", "full": "Intelligent Network", "description": "A network architecture that allows operators to provide advanced telecommunication services."},
+  {"abbr": "CCPS", "full": "Credit Control and Payment System", "description": "A system used to manage credit control and payment processes within an organization, mainly stands for Postpaid billing."},
+  {"abbr": "COMS", "full": "Complex Order Management System", "description": "A system used to manage and process complex orders within an organization."}
 ]
