@@ -1,0 +1,20 @@
+[
+  { "abbr": "FOC", "full": "Free of Cost", "description": "Service or item provided without charge to the customer." },
+  { "abbr": "ECM", "full": "Ericsson Catalog Management", "description": "Ericsson product for managing the product and offer catalog." },
+  { "abbr": "EOC", "full": "Ericsson Order Care", "description": "Ericsson order management solution for capturing and orchestrating orders." },
+  { "abbr": "DOB", "full": "Direct Operator Billing", "description": "Charging digital purchases directly to the operator bill or balance." },
+  { "abbr": "DCB", "full": "Direct Carrier Billing", "description": "Paying for digital content using the mobile carrier account." },
+  { "abbr": "BSS", "full": "Business Support System", "description": "Customer-facing systems: billing, CRM, order and product management." },
+  { "abbr": "EDW", "full": "Enterprise Data Warehouse", "description": "Central repository of integrated data used for reporting and analytics." },
+  { "abbr": "OSS", "full": "Operations Support System", "description": "Network-facing systems: inventory, provisioning, fault and performance management." },
+  { "abbr": "ARPU", "full": "Average Revenue Per User", "description": "Total revenue divided by the number of subscribers over a period." },
+  { "abbr": "MSISDN", "full": "Mobile Station International Subscriber Directory Number", "description": "The phone number of a mobile subscriber." },
+  { "abbr": "IMSI", "full": "International Mobile Subscriber Identity", "description": "Unique identifier of a subscriber stored on the SIM." },
+  { "abbr": "KYC", "full": "Know Your Customer", "description": "Process of verifying a customer's identity." },
+  { "abbr": "MNP", "full": "Mobile Number Portability", "description": "Allows subscribers to keep their number when switching operators." },
+  { "abbr": "SMSC", "full": "Short Message Service Center", "description": "Network element that stores and forwards SMS messages." },
+  { "abbr": "USSD", "full": "Unstructured Supplementary Service Data", "description": "Session-based protocol used for menus like *121#." },
+  { "abbr": "CRM", "full": "Customer Relationship Management", "description": "System for managing customer interactions and data." },
+  { "abbr": "OCS", "full": "Online Charging System", "description": "Real-time charging of prepaid and postpaid usage." },
+  { "abbr": "VAS", "full": "Value Added Service", "description": "Non-core services beyond voice and data, e.g. ringback tones." }
+]

@@ -1,0 +1,14 @@
+{
+  "name": "telco-jargons",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal search site for telecom jargons and their full forms.",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
