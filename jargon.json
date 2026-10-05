@@ -60,5 +60,7 @@
   {"abbr": "CTA", "full": "Call To Action", "description": "This is just a button to move to some action or next step."},
   {"abbr": "IN", "full": "Intelligent Network", "description": "A network architecture that allows operators to provide advanced telecommunication services."},
   {"abbr": "CCPS", "full": "Credit Control and Payment System", "description": "A system used to manage credit control and payment processes within an organization, mainly stands for Postpaid billing."},
-  {"abbr": "COMS", "full": "Complex Order Management System", "description": "A system used to manage and process complex orders within an organization."}
+  {"abbr": "COMS", "full": "Complex Order Management System", "description": "A system used to manage and process complex orders within an organization."},
+  {"abbr": "MCC", "full": "Mobile Country Code", "description": "A unique identifier for a country in mobile networks. Example: 310 for the United States."},
+  {"abbr": "MNC", "full": "Mobile Network Code", "description": "A unique identifier for a mobile network within a country. Example: 260 for T-Mobile in the United States."}
 ]
