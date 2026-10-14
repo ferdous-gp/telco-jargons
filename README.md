@@ -2,6 +2,8 @@
 
 A minimal, distraction-free lookup for telecom abbreviations. Type an abbreviation (or part of its full form) and pick a suggestion to see what it stands for.
 
+Site: https://ferdous-gp.github.io/telco-jargons/
+
 ```
 FOC  → Free of Cost
 ECM  → Ericsson Catalog Management
