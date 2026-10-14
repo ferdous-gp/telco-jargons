@@ -69,6 +69,7 @@
   {"abbr": "CIM", "full": "Customer Information Management", "description": "Processes and systems for managing customer information."},
   {"abbr": "CMP", "full": "CRM Keywords Are Set by Them", "description": "Indicates that the responsible team defines the keywords used in CRM."},
   {"abbr": "COIP", "full": "Company Owned Individual Paid", "description": "Describes a company-owned service or device whose charges are paid by an individual."},
+  {"abbr": "IOIP", "full": "Individual Owned, Individually Paid", "description": "Describes an individually owned service or device whose charges are paid by the individual."},
   {"abbr": "CRD", "full": "Call Data Record", "description": "A record containing details of a call, such as its time, duration, and parties."},
   {"abbr": "DFD", "full": "Data Flow Diagram", "description": "A diagram showing how data moves through a system or process."},
   {"abbr": "DM", "full": "Delivery Manager", "description": "The role responsible for coordinating and overseeing delivery."},
